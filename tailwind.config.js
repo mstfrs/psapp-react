@@ -1,0 +1,58 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        "text-primary": "#272927",
+        "text-dim": "#4F4F4F",
+        background1: "#080808",
+        background2: "#E4E4FF",
+        background3: "#FAFAFA",
+        background4: "#131313",
+        background5: "#DCDCFF",
+        background6: "#F7F7F7",
+        background7: "#DAEDDD",
+        background8: "#FF5619",
+        background9: "#00AD5F",
+        background10: "#F2F2F2",
+        background11: "#050811",
+        "btn-background-1": "#FFC400",
+        "btn-background-2": "#B3FC47",
+      },
+      fontSize: {
+        tiny: "10px",
+        xs: ".75rem",
+        sm: ".875rem",
+        base: "1rem",
+        lg: "1.125rem",
+        xl: "1.25rem",
+        "2xl": "1.5rem",
+        "3xl": "1.875rem",
+        "4xl": "2.25rem",
+        "4xl2": "2.5rem",
+        "5xl": "3rem",
+        "6xl": "3.5rem",
+        "7xl": "5rem",
+      },
+    },
+    screens: {
+      sm: "600px",
+      md: "900px",
+      "md-lg": "1000px",
+      lg: "1200px",
+      xl: "1440px",
+      "2xl": "1600px",
+    },
+    fontFamily: {
+      cambon: ["Cambon", "GT Walsheim Pro", "sans-serif"],
+      "cambon-medium": ["Cambon Medium", "GT Walsheim Pro", "sans-serif"],
+      "cambon-bold": ["Cambon Bold", "GT Walsheim Pro", "sans-serif"],
+      "gt-walsheim-pro": ["GT Walsheim Pro", "sans-serif"],
+      "gt-walsheim-pro-medium": ["GT Walsheim Pro Medium", "sans-serif"],
+    },
+  },
+  plugins: [],
+}
