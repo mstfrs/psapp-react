@@ -123,9 +123,9 @@ const Header = () => {
       <div
         className={`${
           isopen ? "absolute" : "hidden"
-        } md:hidden bg-[#0f0f0f] text-white w-full left-0 `}
+        } md:hidden bg-[#0f0f0f] text-white w-full left-0 top-0 z-99`}
       >
-        <div className="flex justify-between items-center ml-[3.75rem] mt-24 mr-8">
+        <div className="flex justify-between items-center ml-[3.75rem] mt-24 mr-8 ">
           <img
             src="/assets/Images/logo.svg"
             className="h-8 my-6 md:ml-10 "

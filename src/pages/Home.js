@@ -4,6 +4,7 @@ import { Carousel } from "antd";
 import Lottie from 'react-lottie';
 import frame3 from "../assets/Animations/Frame 3.json"
 import frame1 from "../assets/Animations/Frame 1.json"
+import Footer from "../components/Footer/Footer.js"
 
 
 export default function Home() {
@@ -209,17 +210,17 @@ export default function Home() {
 
       {/* Row5 */}
 
-      <div className="pt-20">
-        <div className="font-gt-walsheim-pro mx-4">
+      <div className="md:pt-0 pt-20 md:flex flex-row-reverse justify-end">
+        <div className="font-gt-walsheim-pro mx-4 md:mt-[16rem] md:ml-[7rem] md:w-[37rem]">
         <h2 className="row3-title1 font-bold capitalize leading-8 md:leading-[2.87rem] tracking-[0.005em] text-[#0B0B0B] self-stretch">Get your university approval.</h2>
           <p className="row3-text1 capitalize  leading-[1.31rem] md:leading-6 text-[#424242] self-stretch mt-4  tracking-[0.005em] text-justify">Paramount Students is a platform that connects you with the right universities abroad to pursue your dream education and also settle down in your new community. All in one app!</p>
         </div>
-        <div>
+        <div className="md:ml-[8.3rem] md:mt-[10.2rem] md:w-[28.87rem] md:h-[30rem] items-center text-center">
         <Lottie options={defaultOptions2}
-              height={360}
-              width={346}/>
+              />
           </div>
       </div>
+      <Footer/>
     </>
   );
 }

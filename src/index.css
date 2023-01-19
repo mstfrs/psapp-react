@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "../public/assets/Font/"
+@import "../public/assets/Font/";
 
 .row1-text{
   font-size: clamp(0.75rem,1.6vw,.5rem)
