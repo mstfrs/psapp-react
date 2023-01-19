@@ -81,7 +81,7 @@ const Header = () => {
           className="h-8 my-6 md:ml-10 "
           alt=""
         />
-        <div className="bg-[#FFC400] hover:bg-[#FFD028] w-8 h-8 rounded-full text-black flex justify-center items-center md:hidden">
+        <div className="hover:bg-[#FFC400] bg-[#FFD028] w-8 h-8 rounded-full text-black flex justify-center items-center md:hidden">
           <HiDownload />
         </div>
 
@@ -98,7 +98,7 @@ const Header = () => {
           <li className="my-4 ">
             <a href="/">SECURITY</a>
           </li>
-          <button className="bg-[#FFD028] text-[#0b0b0b] font-medium border-[0.5px] rounded-[2.62rem] w-[10vw] h-[3.125rem] flex items-center justify-center">
+          <button className="bg-[#FFD028] hover:bg-[#FFC400] text-[#0b0b0b] font-medium border-[0.5px] rounded-[2.62rem] w-[10vw] h-[3.125rem] flex items-center justify-center">
             Free Download
           </button>
         </ul>
@@ -155,7 +155,7 @@ const Header = () => {
               SECURITY
             </a>
           </li>
-          <button className="ml-[3.75rem] mt-8 py-4 px-5 bg-[#FFD028] text-[#0b0b0b] text-base leading-[18px] font-medium border-[0.5px] rounded-[2.62rem] w-[9.25rem] text-center whitespace-nowrap">
+          <button className="ml-[3.75rem] mt-8 py-4 px-5 bg-[#FFD028] hover:bg-[#FFC400] text-[#0b0b0b] text-base leading-[18px] font-medium border-[0.5px] rounded-[2.62rem] w-[9.25rem] text-center whitespace-nowrap">
             <span >Free Download</span> 
           </button>
         </ul>

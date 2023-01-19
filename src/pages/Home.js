@@ -166,14 +166,14 @@ export default function Home() {
 
       {/* Row3 */}
 
-      <div className="font-gt-walsheim-pro  md:mt-[6.25rem] mt-12 md:mr-[7.5rem]">
-        <div className="">
+      <div className="font-gt-walsheim-pro  md:mt-[6.25rem] mt-12 ">
+        <div className="  justify-center">
           <h2 className="row3-title1 capitalize px-4 text-center leading-8 md:leading-[2.87rem] tracking-[-0.01em] text-[#0B0B0B] self-stretch">How Does Paramount Students Mobile app work</h2>
           <p className="row3-text1 capitalize text-center leading-[1.31rem] md:leading-6 text-[#424242] self-stretch mt-2 md:mt-4">Swift onboarding and user-friendly features</p>
 
         </div>
         <div className="md:flex md:flex-row-reverse justify-center gap-[12.18rem] md:mt-16">
-        <div className="mt-[3.75rem] ml-4 md:mt-[7.18rem]">
+        <div className="mt-[3.75rem] ml-4 md:mt-[7.18rem] md:mr-[7.5rem]">
           <h2 className=" row3-title2 font-medium text-[#0B0B0B] leading-8 md:leading-[2.87rem] tracking-[0.005em] self-stretch">Sign up for and fill out your educational background.</h2>
           <p className="row3-text2 capitalize mt-4 leading-4 md:leading-6 text-[#424242]  text-justify">Paramount Students is a platform that connects you with the right universities abroad to pursue your dream education and also settle down in your new community. All in one app!</p>
           <div className="row3-text3 rounded-[1.25rem] border-[0.5px] w-[20.5rem] h-10 border-[#5151FD] px-2 pl-3 flex items-center mt-4 ">
@@ -193,7 +193,7 @@ export default function Home() {
 
       {/* Row4 */}
       <div className=" md:flex md:flex-row md:justify-between relative mt-[-6.12rem] z-20 text-white bg-[#0f0f0f]">
-        <div className="mx-4 font-gt-walsheim-pro pt-[6.12rem] tracking-[0.005em] md:mt-[11.5rem] md:ml-[12.25rem] md:mr-[10rem]">
+        <div className="mx-4 font-gt-walsheim-pro pt-[6.12rem] md:pt-0 tracking-[0.005em] md:mt-[11.5rem] md:ml-[12.25rem] md:mr-[10rem]">
           <h2 className="row4-title1 font-bold leading-8 md:leading-[2.87rem] ">
           Find your dream university and program, as well as a huge number of scholarships.
           </h2>
@@ -215,7 +215,7 @@ export default function Home() {
         <h2 className="row3-title1 font-bold capitalize leading-8 md:leading-[2.87rem] tracking-[0.005em] text-[#0B0B0B] self-stretch">Get your university approval.</h2>
           <p className="row3-text1 capitalize  leading-[1.31rem] md:leading-6 text-[#424242] self-stretch mt-4  tracking-[0.005em] text-justify">Paramount Students is a platform that connects you with the right universities abroad to pursue your dream education and also settle down in your new community. All in one app!</p>
         </div>
-        <div className="md:ml-[8.3rem] md:mt-[10.2rem] md:w-[28.87rem] md:h-[30rem] items-center text-center">
+        <div className="md:ml-[8.3rem] md:mt-[10.2rem] md:w-[28.87rem] md:h-[30rem] items-center  text-center">
         <Lottie options={defaultOptions2}
               />
           </div>
