@@ -5,6 +5,10 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
 import  React  from 'react';
 import { Link } from "react-router-dom";
+import { changeLang } from "../../redux/langSlice";
+import {useDispatch} from "react-redux"
+import { useTranslation } from 'react-i18next';
+
 
 
 const items = [
@@ -29,6 +33,7 @@ const items = [
   },
   {
     key: "EN",
+    id:"en",
     label: (
       <p className="hover:text-[#F79009] hover:border-y border-[#F79009] pl-[1.5rem] py-[0.81rem] font-gt-walsheim-pro ">
         English
@@ -37,6 +42,7 @@ const items = [
   },
   {
     key: "TR",
+    id:"tr",
     label: (
       <p className="hover:text-[#F79009] hover:border-y border-[#F79009] pl-[1.5rem] py-[0.81rem] font-gt-walsheim-pro ">
         Turkish
@@ -62,11 +68,21 @@ const items = [
 ];
 
 const Header = () => {
+  const dispatch=useDispatch();
+  const {t,i18n} =useTranslation();
+  
+  
   const [selects, setSelects] = useState("EN");
   const [isopen, setIsopen] = useState(false);
-  const onClick = ({ key }) => {
+  const onClick = ({ key}) => {
     setSelects(key);
+    dispatch(changeLang(key))
+    const language=key.toLowerCase()
+    console.log(language)
+    i18n.changeLanguage(language)
+    
   };
+  
   return (
     <header>
       <div
@@ -90,19 +106,19 @@ const Header = () => {
 
         <ul className="md:flex justify-end hidden w-full md:mr-[3.75rem] gap-[2vw] md:my-4  ml-[1.7rem] font-gt-walsheim-pro font-normal text-[1.11vw]  ">
           <li className="my-4 ">
-            <Link to="/features">FEATURES</Link>
+            <Link to="/features">{t("FEATURES")}</Link>
           </li>
           <li className="my-4 ">
-            <Link to="/privacy">PRIVACY POLICY</Link>
+            <Link to="/privacy">{t("PRIVACY POLICY")}</Link>
           </li>
           <li className="my-4 ">
-            <Link to="/help">HELP CENTER</Link>
+            <Link to="/help">{t("HELP CENTER")}</Link>
           </li>
           <li className="my-4 ">
-            <Link to="/security">SECURITY</Link>
+            <Link to="/security">{t("SECURITY")}</Link>
           </li>
           <button className="bg-[#FFD028] hover:bg-[#FFC400] text-[#0b0b0b] font-medium border-[0.5px] rounded-[2.62rem] w-[10vw] h-[3.125rem] flex items-center justify-center">
-            Free Download
+            {t("Free Download")}
           </button>
         </ul>
 

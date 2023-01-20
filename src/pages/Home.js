@@ -7,8 +7,11 @@ import frame3 from "../assets/Animations/Frame 3.json";
 import frame1 from "../assets/Animations/Frame 1.json";
 import Footer from "../components/Footer/Footer.js";
 import Card from "./../components/Card/Card";
+import { useTranslation } from "react-i18next";
+
 
 export default function Home() {
+  const {t}=useTranslation();
   const carouselRef = React.createRef();
   const defaultOptions1 = {
     loop: true,
@@ -34,7 +37,8 @@ export default function Home() {
       <div className="md:flex md:flex-row justify-between md:mt-8 mt-[4.5rem] md:gap-[16rem]">
         <div className=" md:pl-[12rem] md:mt-[6.87rem] pl-4 pr-5 md:pr-0 md:w-[45.68rem]">
           <h2 className=" row1-title text-[#0B0B0B] font-gt-walsheim-pro font-normal  md:leading-[4.31rem] leading-[2.56rem] capitalize tracking-[-0.02em]">
-            You've never received an admission so fast before.
+            {/* You've never received an admission so fast before. */}
+            {t("Row1title")}
           </h2>
           <p className="font-gt-walsheim-pro font-medium text-sm md:text-[1.12rem] leading-4 md:leading-6 text-[#424242] mt-4">
             Paramount Students is a platform that connects you with the right
