@@ -113,7 +113,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="flex justify-center mt-[3.75rem]  md:hidden">
+        <div className="flex justify-center mt-[3.75rem] md:hidden">
           <div className=" w-[21.5rem] text-center">
             <Carousel effect="fade" autoplay dots={false}>
               <div className="text-center font-medium">

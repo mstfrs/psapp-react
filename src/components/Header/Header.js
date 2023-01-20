@@ -84,7 +84,7 @@ const Header = () => {
   };
   
   return (
-    <header>
+    <header className=" ">
       <div
         className={`${
           isopen ? "hidden" : "flex"
@@ -142,7 +142,7 @@ const Header = () => {
       <div
         className={`${
           isopen ? "absolute" : "hidden"
-        } md:hidden bg-[#0f0f0f] text-white w-full left-0 top-0 z-99`}
+        } md:hidden bg-[#0f0f0f] text-white w-full left-0 top-0 z-20`}
       >
         <div className="flex justify-between items-center ml-[3.75rem] mt-24 mr-8 ">
           <Link to="/"><img
@@ -156,26 +156,26 @@ const Header = () => {
         <ul className=" flex md:flex-row flex-col md:my-4  font-gt-walsheim-pro font-normal text-base ">
           <li className=" border-t border-b border-[#252525] pt-[1.37rem] pb-8  ">
             <Link to="/features" className="ml-[3.75rem] ">
-              FEATURES
+              {t("FEATURES")}
             </Link>
           </li>
           <li className=" border-t border-b border-[#252525] pt-[1.37rem] pb-8">
             <Link to="/privacy" className="ml-[3.75rem]">
-              PRIVACY POLICY
+              {t("PRIVACY POLICY")}
             </Link>
           </li>
           <li className=" border-t border-b border-[#252525] pt-[1.37rem] pb-8">
             <Link to="/help" className="ml-[3.75rem] ">
-              HELP CENTER
+              {t("HELP CENTER")}
             </Link>
           </li>
           <li className=" border-t border-b border-[#252525] pt-[1.37rem] pb-8">
             <Link to="/security" className="ml-[3.75rem] ">
-              SECURITY
+              {t("SECURITY")}
             </Link>
           </li>
           <button className="ml-[3.75rem] mt-8 py-4 px-5 bg-[#FFD028] hover:bg-[#FFC400] text-[#0b0b0b] text-base leading-[18px] font-medium border-[0.5px] rounded-[2.62rem] w-[9.25rem] text-center whitespace-nowrap">
-            <span >Free Download</span> 
+            <span >{t("Free Download")}</span> 
           </button>
         </ul>
         <div className="flex justify-between ml-[3.75rem] mb-24 mt-[15rem] items-center">
