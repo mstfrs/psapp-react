@@ -10,14 +10,14 @@ const Footer = () => {
         <img src="/assets/Images/logo.svg" className="h-10  " alt="" />
       </div>
       <div className="grid grid-cols-2 ml-[2.12rem] mr-4 mt-[3.12rem]">
-        <div className="flex flex-col gap-4 text-sm">
+        <div className="flex flex-col gap-4 text-xs">
           <h4 className="mb-4 text-base font-medium text-white">Policies</h4>
           <span>Privacy Policy</span>
           <span>Terms and conditions</span>
           <span>Help Center</span>
           <span>Security</span>
         </div>
-        <div className="flex flex-col gap-4 text-sm">
+        <div className="flex flex-col gap-4 text-xs">
           <h4 className="mb-4 text-base font-medium text-white">
             Say Hello Us
           </h4>
