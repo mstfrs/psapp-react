@@ -20,6 +20,7 @@ module.exports = {
       background11: "#050811",
       "btn-background-1": "#FFC400",
       "btn-background-2": "#B3FC47",
+      "card-bg": 'rgba(255, 196, 0, 0.1)',
     },
     fontSize: {
       tiny: "10px",

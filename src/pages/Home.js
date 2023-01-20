@@ -289,8 +289,36 @@ export default function Home() {
         />
       </div>
 
+      {/* Row7 */}
+      <div className="font-gt-walsheim-pro  md:mt-[6.25rem] mt-[4.5rem] max-w-[62.25rem] mx-auto">
+        <div className="  justify-center">
+          <h2 className="row3-title1 capitalize px-4 text-center leading-8 md:leading-[2.87rem] tracking-[-0.01em] text-[#0B0B0B] self-stretch">
+            We are happy to provide students with access to countless
+            universities.
+          </h2>
+          <p className="row3-text1 capitalize text-center leading-[1.31rem] md:leading-6 text-[#424242] self-stretch mt-2 md:mt-4">
+            Kind words from our users around the world
+          </p>
+        </div>
+        <div className=" mt-12 mx-[1.125rem] mb-[3.37rem]">
+          <img
+            src="/assets/Icons/Home page-428/Animation(1).png"
+            alt=""
+            className="h-full"
+          />
+        </div>
+      </div>
+
+      {/* Row8 */}
+      <div className="bg-card-bg rounded-[2.25rem] border-[0.5px] border-[#FFD028] px-[3.5rem] min-w-[24.75rem] min-h-[20.75rem] mx-4 mb-20 pt-[2.87rem] flex justify-center flex-col md:rounded-[12.18rem] md:mx-[8.81rem] md:mb-[4.62rem] md:mt-[9rem]">
+        <h2 className=" row2-title font-gt-walsheim-pro text-center capitalize leading-[120%]">
+        Ready? Apply now and get Addmission
+        </h2>
+        <p className=" text-[#424242] text-sm text-center font-gt-walsheim-pro capitalize mt-4 font-normal leading-4 row2-text">There are over 500 universities waiting for you application</p>
+        <button className="mx-auto mt-[2.68rem] min-w-[16.37rem] min-h-[4.31rem] bg-[#FFD028] rounded-[2.62rem] border border-[#FFC400] hover:bg-[#FFC400] font-gt-walsheim-pro font-medium leading-[1.31rem] tracking-[-0.0025em] capitalize text-[#0B0B0B] ">Free Download</button>
+      </div>
+      
       <Footer />
     </>
   );
 }
- 
