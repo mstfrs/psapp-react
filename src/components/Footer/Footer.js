@@ -1,9 +1,11 @@
+
+import  React from 'react';
 const Footer = () => {
   return (
     <>
 
      {/* mobile design  */}
-    <div className="md:hidden rounded-t-[2.25rem] bg-[#0F0F0F] h-[37rem] text-[#F2F2F2] font-gt-walsheim-pro">
+    <div className="md:hidden rounded-t-[2.25rem] bg-[#0F0F0F] min-h-[37rem] pb-4 text-[#F2F2F2] font-gt-walsheim-pro">
       <div className=" relative pt-8 pl-[2.12rem]">
         <img src="/assets/Images/logo.svg" className="h-10  " alt="" />
       </div>
@@ -72,7 +74,7 @@ const Footer = () => {
         <img src="/assets/Images/logo.svg" className="w-40 mb-8 " alt="" />
         
         
-        <img src="/assets/Icons/Footer/playstore.svg" alt="" className="w-[11.25rem] "/>
+        <img src="/assets/Icons/Footer/playstore.svg" alt="" className="w-[11.25rem] mb-4 "/>
         <img src="/assets/Icons/Footer/applestore.svg" alt="" className="w-[11.25rem] "/>
     
   

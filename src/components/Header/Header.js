@@ -1,8 +1,10 @@
 
-import React, { useState } from "react";
+import { useState } from "react";
 import { Button, Dropdown } from "antd";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
+import  React  from 'react';
+import { Link } from "react-router-dom";
 
 
 const items = [
@@ -76,27 +78,28 @@ const Header = () => {
           className="md:hidden static w-8 h-8 mx-[0.87rem] cursor-pointer "
           onClick={() => setIsopen(true)}
         />
+        <Link to="/">
         <img
           src="/assets/Images/logo.svg"
           className="h-8 my-6 md:ml-10 "
           alt=""
-        />
+        /></Link>
         <div className="hover:bg-[#FFC400] bg-[#FFD028] w-8 h-8 rounded-full text-black flex justify-center items-center md:hidden">
           <HiDownload />
         </div>
 
         <ul className="md:flex justify-end hidden w-full md:mr-[3.75rem] gap-[2vw] md:my-4  ml-[1.7rem] font-gt-walsheim-pro font-normal text-[1.11vw]  ">
           <li className="my-4 ">
-            <a href="/">FEATURES</a>
+            <Link to="/features">FEATURES</Link>
           </li>
           <li className="my-4 ">
-            <a href="/">PRIVACY POLICY</a>
+            <Link to="/privacy">PRIVACY POLICY</Link>
           </li>
           <li className="my-4 ">
-            <a href="/">HELP CENTER</a>
+            <Link to="/help">HELP CENTER</Link>
           </li>
           <li className="my-4 ">
-            <a href="/">SECURITY</a>
+            <Link to="/security">SECURITY</Link>
           </li>
           <button className="bg-[#FFD028] hover:bg-[#FFC400] text-[#0b0b0b] font-medium border-[0.5px] rounded-[2.62rem] w-[10vw] h-[3.125rem] flex items-center justify-center">
             Free Download
@@ -126,34 +129,34 @@ const Header = () => {
         } md:hidden bg-[#0f0f0f] text-white w-full left-0 top-0 z-99`}
       >
         <div className="flex justify-between items-center ml-[3.75rem] mt-24 mr-8 ">
-          <img
+          <Link to="/"><img
             src="/assets/Images/logo.svg"
             className="h-8 my-6 md:ml-10 "
             alt=""
-          />
+          /></Link>
           <FaTimes className="w-8 h-8 cursor-pointer" onClick={()=>setIsopen(false)} />
         </div>
 
         <ul className=" flex md:flex-row flex-col md:my-4  font-gt-walsheim-pro font-normal text-base ">
           <li className=" border-t border-b border-[#252525] pt-[1.37rem] pb-8  ">
-            <a href="/" className="ml-[3.75rem] ">
+            <Link to="/features" className="ml-[3.75rem] ">
               FEATURES
-            </a>
+            </Link>
           </li>
           <li className=" border-t border-b border-[#252525] pt-[1.37rem] pb-8">
-            <a href="/" className="ml-[3.75rem]">
+            <Link to="/privacy" className="ml-[3.75rem]">
               PRIVACY POLICY
-            </a>
+            </Link>
           </li>
           <li className=" border-t border-b border-[#252525] pt-[1.37rem] pb-8">
-            <a href="/" className="ml-[3.75rem] ">
+            <Link to="/help" className="ml-[3.75rem] ">
               HELP CENTER
-            </a>
+            </Link>
           </li>
           <li className=" border-t border-b border-[#252525] pt-[1.37rem] pb-8">
-            <a href="/" className="ml-[3.75rem] ">
+            <Link to="/security" className="ml-[3.75rem] ">
               SECURITY
-            </a>
+            </Link>
           </li>
           <button className="ml-[3.75rem] mt-8 py-4 px-5 bg-[#FFD028] hover:bg-[#FFC400] text-[#0b0b0b] text-base leading-[18px] font-medium border-[0.5px] rounded-[2.62rem] w-[9.25rem] text-center whitespace-nowrap">
             <span >Free Download</span> 

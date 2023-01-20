@@ -1,3 +1,4 @@
+import React from "react"
 import Header from "../components/Header/Header.js";
 import { IoIosArrowForward } from "react-icons/io";
 import { Carousel } from "antd";
@@ -5,6 +6,7 @@ import Lottie from 'react-lottie';
 import frame3 from "../assets/Animations/Frame 3.json"
 import frame1 from "../assets/Animations/Frame 1.json"
 import Footer from "../components/Footer/Footer.js"
+import Card from './../components/Card/Card';
 
 
 export default function Home() {
@@ -220,6 +222,8 @@ export default function Home() {
               />
           </div>
       </div>
+       
+       <Card/>
       <Footer/>
     </>
   );
