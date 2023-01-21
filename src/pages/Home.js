@@ -41,9 +41,7 @@ export default function Home() {
             {t("Row1title")}
           </h2>
           <p className="font-gt-walsheim-pro font-medium text-sm md:text-[1.12rem] leading-4 md:leading-6 text-[#424242] mt-4">
-            Paramount Students is a platform that connects you with the right
-            universities abroad to pursue your dream education and also settle
-            down in your new community. All in one app!
+            {t("Paramount Students is a platform that connects you with the right universities abroad to pursue your dream education and also settle down in your new community. All in one app!")}
           </p>
           <div className="md:flex hidden flex-row">
             <div className="flex justify-start items-center ml-9 md:ml-0 mt-[2.25rem] ">
@@ -108,8 +106,7 @@ export default function Home() {
             <span className="text-[#FFC400]"> paramount students</span> has.
           </h2>
           <p className=" row2-text font-normal leading-4 text-[#424242] mt-4">
-            With over 50+ universities, 200 high schools, and 7000 registered
-            students
+            {t("With over 50+ universities, 200 high schools, and 7000 registered students")}
           </p>
         </div>
 
@@ -123,7 +120,7 @@ export default function Home() {
                   className="w-[21.5rem] h-[19-18rem] "
                 />
                 <h3 className="font-gt-walsheim-pro text-lg leading-[1.25rem] capitalize text-[#0B0B0B] mt-4 ">
-                  200+ High Schools
+                  {t("200+ High Schools")}
                 </h3>
               </div>
               <div className="text-center font-medium">
@@ -133,7 +130,7 @@ export default function Home() {
                   className="w-[21.5rem] h-[19-18rem]"
                 />
                 <h3 className="font-gt-walsheim-pro text-lg leading-[1.25rem] capitalize text-[#0B0B0B] mt-4 ">
-                  7000+ Students
+                  {t("7000+ Students")}
                 </h3>
               </div>
               <div className="text-center font-medium">
@@ -143,7 +140,7 @@ export default function Home() {
                   className="w-[21.5rem] h-[19-18rem]"
                 />
                 <h3 className="font-gt-walsheim-pro text-lg leading-[1.25rem] capitalize text-[#0B0B0B] mt-4 ">
-                  50+ Universities
+                  {t("50+ Universities")}
                 </h3>
               </div>
             </Carousel>
@@ -154,19 +151,19 @@ export default function Home() {
           <div className="text-center font-medium">
             <img src="/assets/Images/row2-1.png" alt="" className="  " />
             <h3 className="font-gt-walsheim-pro text-lg leading-[1.25rem] capitalize text-[#0B0B0B] mt-4 ">
-              200+ High Schools
+              {t("200+ High Schools")}
             </h3>
           </div>
           <div className="text-center font-medium">
             <img src="/assets/Images/row2-2.png" alt="" className="" />
             <h3 className="font-gt-walsheim-pro text-lg leading-[1.25rem] capitalize text-[#0B0B0B] mt-4 ">
-              7000+ Students
+              {t("7000+ Students")}
             </h3>
           </div>
           <div className="text-center font-medium">
             <img src="/assets/Images/row2-3.png" alt="" className="" />
             <h3 className="font-gt-walsheim-pro text-lg leading-[1.25rem] capitalize text-[#0B0B0B] mt-4 ">
-              50+ Universities
+              {t("50+ Universities")}
             </h3>
           </div>
         </div>

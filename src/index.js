@@ -9,7 +9,7 @@ import "./i18n.js";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Suspense fallback="loading">
+  <Suspense >
   <Provider store={store}>
     <App />
   </Provider>

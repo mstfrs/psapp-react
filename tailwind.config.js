@@ -8,7 +8,7 @@ module.exports = {
       "text-primary": "#272927",
       "text-dim": "#4F4F4F",
       background1: "#080808",
-      background2: "#E4E4FF",
+      background2: "#1E1E1E",
       background3: "#FAFAFA",
       background4: "#131313",
       background5: "#DCDCFF",

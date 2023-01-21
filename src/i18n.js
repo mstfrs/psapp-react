@@ -9,7 +9,7 @@ const loadPath = `https://api.i18nexus.com/project_resources/translations/{{lng}
 // const language=useSelector((state)=>state.lang)
 i18next
   .use(HttpBackend)
-  .use(LanguageDetector)
+  
   .use(initReactI18next)
   .init({
     fallbackLng: "EN",
